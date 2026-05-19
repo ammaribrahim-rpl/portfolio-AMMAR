@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Ammar Ibrahim</title>
+    <meta name="description" content="Portfolio projects by Ammar Ibrahim — web apps, UI/UX designs, and more." />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- NAVBAR -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm transition-shadow duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="../index.html" class="text-xl font-bold gradient-text tracking-tight">Ammar<span
+                    class="text-slate-700">.</span></a>
+            <ul class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-600">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link btn-primary text-white !text-sm">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+                <span class="block w-6 h-0.5 bg-slate-700 rounded"></span>
+                <span class="block w-6 h-0.5 bg-slate-700 rounded"></span>
+                <span class="block w-6 h-0.5 bg-slate-700 rounded"></span>
+            </button>
+        </div>
+        <div id="mobile-menu"
+            class="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm font-medium text-slate-700">
+            <a href="../index.html" class="block nav-link">Home</a>
+            <a href="about.html" class="block nav-link">About</a>
+            <a href="projects.html" class="block nav-link">Projects</a>
+            <a href="experience.html" class="block nav-link">Experience</a>
+            <a href="skills.html" class="block nav-link">Skills</a>
+            <a href="cv.html" class="block nav-link">CV</a>
+            <a href="contact.html" class="block btn-primary text-center mt-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="pt-28 pb-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <span
+                class="inline-block px-4 py-1.5 bg-cyan-50 text-cyan-600 rounded-full text-sm font-semibold mb-4">Portfolio</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">My <span class="gradient-text">Projects</span></h1>
+            <p class="text-slate-500 text-lg">Things I've built with passion and curiosity.</p>
+        </div>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <section class="py-8 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <button class="filter-btn filter-all active" data-filter="all">All Projects</button>
+                <button class="filter-btn filter-web" data-filter="web">🌐 Web Apps</button>
+                <button class="filter-btn filter-app" data-filter="app">📱 Mobile / Apps</button>
+                <button class="filter-btn filter-ui" data-filter="ui">🎨 UI/UX Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="py-10 px-6 pb-20">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">Yummy Company</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A modern culinary website that showcases various
+                            international dishes with a clean and responsive interface.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Tailwind</span><span class="tag">HTML</span><span
+                                class="tag">CSS</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/yummy-company"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">Website Absence</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A web-based attendance management system designed to
+                            simplify employee/student attendance tracking with a clean and efficient interface.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Tailwind</span><span class="tag">PHP</span><span
+                                class="tag">MySQL</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/absenbos"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">E-report Website</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A web-based reporting system designed to manage and
+                            organize student or employee reports digitally with a simple and efficient interface.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Tailwind</span><span class="tag">PHP</span><span
+                                class="tag">MySQL</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/e-report"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">E-library Website</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A digital library website designed to simplify book
+                            management, borrowing, and online reading with a clean and user-friendly interface.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Tailwind</span><span class="tag">PHP</span><span
+                                class="tag">MySQL</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/project-elibrary"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">Payroll Website</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A web-based payroll management system designed to
+                            simplify employee salary calculation, attendance tracking, and payroll reporting
+                            efficiently.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Bootstrap</span><span class="tag">PHP</span><span
+                                class="tag">MySQL</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/payroll-project"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Website -->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+                    <div
+                        class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">Invoice Website</h3>
+                            <span class="cat-badge cat-web">🌐 Web</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">A web-based invoice management system designed to create,
+                            organize, and manage billing data efficiently with a clean and user-friendly interface.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Bootstrap</span><span class="tag">PHP</span><span
+                                class="tag">MySQL</span><span class="tag">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/ammaribrahim-rpl/invoice-finalproject"
+                                class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project UI/UX-->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="ui">
+                    <div
+                        class="h-44 bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">UI Component Library</h3>
+                            <span class="cat-badge cat-ui">🎨 UI/UX</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">Reusable component system with full Figma design specs
+                            and Tailwind CSS snippets.</p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">Figma</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Apps-->
+                <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="app">
+                    <div
+                        class="h-44 bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg">Finance Tracker</h3>
+                            <span class="cat-badge cat-app">📱 App</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-3">Mobile-first personal budget tracker with charts,
+                            categories, and monthly reports.</p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="tag">Flutter</span><span class="tag">Dart</span><span
+                                class="tag">Firebase</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-slate-500 text-sm">© 2025 Ammar Ibrahim. All rights reserved.</p>
+            <div class="flex gap-3">
+                <a href="https://github.com/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="mailto:ammar@email.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .animate-show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Colored filter buttons ── */
+        .filter-btn {
+            transition: all 0.2s ease;
+        }
+
+        /* All — default cyan (inherits existing .filter-btn.active) */
+        .filter-all.active,
+        .filter-all:hover {
+            border-color: #06b6d4;
+            color: #0891b2;
+            background: #e0f7fa;
+        }
+
+        /* Web — blue */
+        .filter-web {
+            border-color: #e2e8f0;
+            color: #64748b;
+        }
+
+        .filter-web.active,
+        .filter-web:hover {
+            border-color: #3b82f6;
+            color: #2563eb;
+            background: #eff6ff;
+        }
+
+        /* App — red */
+        .filter-app {
+            border-color: #e2e8f0;
+            color: #64748b;
+        }
+
+        .filter-app.active,
+        .filter-app:hover {
+            border-color: #ef4444;
+            color: #dc2626;
+            background: #fef2f2;
+        }
+
+        /* UI/UX — green */
+        .filter-ui {
+            border-color: #e2e8f0;
+            color: #64748b;
+        }
+
+        .filter-ui.active,
+        .filter-ui:hover {
+            border-color: #22c55e;
+            color: #16a34a;
+            background: #f0fdf4;
+        }
+
+        /* ── Colored category badges on cards ── */
+        .cat-badge {
+            display: inline-block;
+            padding: 0.2rem 0.7rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .cat-web {
+            background: #eff6ff;
+            color: #2563eb;
+        }
+
+        .cat-app {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+
+        .cat-ui {
+            background: #f0fdf4;
+            color: #16a34a;
+        }
+    </style>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ammar Ibrahim — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ammar Ibrahim — Frontend Developer & UI/UX Enthusiast." />
+
+  <!-- Tailwind CSS (Local) -->
+  <link rel="stylesheet" href="css/tailwind.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Icons (Heroicons via CDN snippet + Unicode fallback) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-50 text-slate-800">
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm transition-shadow duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="text-xl font-bold gradient-text tracking-tight">
+        Ammar<span class="text-slate-700">.</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-600">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/about.html" class="nav-link">About</a></li>
+        <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="pages/experience.html" class="nav-link">Experience</a></li>
+        <li><a href="pages/skills.html" class="nav-link">Skills</a></li>
+        <li><a href="pages/cv.html" class="nav-link">CV</a></li>
+        <li><a href="pages/contact.html" class="nav-link btn-primary text-white !text-sm">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-slate-700 rounded transition-all"></span>
+        <span class="block w-6 h-0.5 bg-slate-700 rounded transition-all"></span>
+        <span class="block w-6 h-0.5 bg-slate-700 rounded transition-all"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm font-medium text-slate-700">
+      <a href="index.html" class="block nav-link">Home</a>
+      <a href="pages/about.html" class="block nav-link">About</a>
+      <a href="pages/projects.html" class="block nav-link">Projects</a>
+      <a href="pages/experience.html" class="block nav-link">Experience</a>
+      <a href="pages/skills.html" class="block nav-link">Skills</a>
+      <a href="pages/cv.html" class="block nav-link">CV</a>
+      <a href="pages/contact.html" class="block btn-primary text-center mt-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="min-h-screen flex items-center pt-20 px-6">
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center py-16">
+
+      <!-- Text -->
+      <div class="animate-on-scroll">
+        <span
+          class="inline-block px-4 py-1.5 bg-cyan-50 text-cyan-600 rounded-full text-sm font-semibold mb-5 tracking-wide">
+          👋 Hello, I'm
+        </span>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+          Ammar<br /><span class="gradient-text">Ibrahim</span>
+        </h1>
+        <p class="text-xl text-slate-500 mb-3 font-medium">
+          Frontend Developer &amp; UI/UX Enthusiast
+        </p>
+        <p class="text-slate-500 mb-8 leading-relaxed max-w-md">
+          I craft modern, responsive web experiences with clean code and thoughtful design.
+          Passionate about building products that are both beautiful and functional.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="pages/projects.html" class="btn-primary">
+            <i class="fa-solid fa-rocket"></i> View My Work
+          </a>
+          <a href="pages/contact.html" class="btn-outline">
+            <i class="fa-solid fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="flex gap-8 mt-10">
+          <div>
+            <p class="text-2xl font-bold text-slate-800">10+</p>
+            <p class="text-sm text-slate-500">Projects</p>
+          </div>
+          <div class="border-l border-gray-200 pl-8">
+            <p class="text-2xl font-bold text-slate-800">2+</p>
+            <p class="text-sm text-slate-500">Years Learning</p>
+          </div>
+          <div class="border-l border-gray-200 pl-8">
+            <p class="text-2xl font-bold text-slate-800">5+</p>
+            <p class="text-sm text-slate-500">Technologies</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar / Illustration -->
+      <div class="flex justify-center animate-on-scroll">
+        <div class="relative">
+          <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="assets/images/profile.jpg" alt="Ammar Ibrahim" class="w-full h-full object-cover"
+              onerror="this.outerHTML='<div class=\'w-full h-full bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-7xl font-bold\'>AI</div>'" />
+          </div>
+          <!-- Decoration blobs -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-cyan-100 rounded-full -z-10"></div>
+          <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-sky-100 rounded-full -z-10"></div>
+          <!-- Status badge -->
+          <div
+            class="absolute bottom-4 -right-4 bg-white rounded-2xl px-3 py-2 shadow-lg flex items-center gap-2 text-sm font-semibold">
+            <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
+            Available for work
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SKILLS PREVIEW ══════════════════ -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10 animate-on-scroll">
+        <h2 class="section-title">My <span>Tech Stack</span></h2>
+        <p class="section-subtitle mt-2">Technologies I work with</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 animate-on-scroll">
+        <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="skill-badge"><i class="fa-brands fa-react"></i> React</span>
+        <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+        <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+        <span class="skill-badge"><i class="fa-brands fa-figma"></i> Figma</span>
+        <span class="skill-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+        <span class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind</span>
+      </div>
+
+      <div class="text-center mt-8 animate-on-scroll">
+        <a href="pages/skills.html" class="btn-outline text-sm">
+          View All Skills <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FEATURED PROJECTS ══════════════════ -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle mt-2">A selection of my recent work</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+        <!-- Project Card 1 -->
+        <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="web">
+          <div
+            class="h-44 bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-5xl">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-1">E-Commerce Platform</h3>
+            <p class="text-slate-500 text-sm mb-3">A full-stack e-commerce website with cart, auth, and product
+              management.</p>
+            <div class="flex flex-wrap gap-1 mb-4">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="app">
+          <div
+            class="h-44 bg-gradient-to-br from-violet-400 to-Purple-500 flex items-center justify-center text-white text-5xl">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-1">Task Manager App</h3>
+            <p class="text-slate-500 text-sm mb-3">A productivity app with drag-and-drop, categories, and dark mode.</p>
+            <div class="flex flex-wrap gap-1 mb-4">
+              <span class="tag">JavaScript</span><span class="tag">CSS3</span><span class="tag">LocalStorage</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="card p-0 overflow-hidden animate-on-scroll project-card" data-category="ui">
+          <div
+            class="h-44 bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white text-5xl">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-1">UI Component Library</h3>
+            <p class="text-slate-500 text-sm mb-3">A reusable component system built with Tailwind CSS and Figma design
+              specs.</p>
+            <div class="flex flex-wrap gap-1 mb-4">
+              <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">Figma</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="btn-outline text-xs !py-1.5 !px-4"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-10 animate-on-scroll">
+        <a href="pages/projects.html" class="btn-outline">
+          View All Projects <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CTA BANNER ══════════════════ -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center animate-on-scroll">
+      <div class="bg-gradient-to-br from-cyan-500 to-sky-600 rounded-3xl p-12 text-white shadow-xl">
+        <h2 class="text-3xl font-extrabold mb-3">Let's Work Together!</h2>
+        <p class="text-cyan-100 mb-8">
+          I'm open to freelance, internships, and full-time opportunities.
+          Let's build something awesome.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="pages/contact.html"
+            class="bg-white text-cyan-600 font-bold px-7 py-3 rounded-full hover:bg-cyan-50 transition">
+            <i class="fa-solid fa-envelope mr-2"></i> Contact Me
+          </a>
+          <a href="pages/cv.html"
+            class="border-2 border-white text-white font-bold px-7 py-3 rounded-full hover:bg-white hover:text-cyan-600 transition">
+            <i class="fa-solid fa-file-arrow-down mr-2"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="bg-white border-t border-gray-100 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-slate-500 text-sm">© 2025 Ammar Ibrahim. All rights reserved.</p>
+      <div class="flex gap-3">
+        <a href="https://github.com/" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:ammar@email.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Animation styles (lightweight, no extra library) -->
+  <style>
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .animate-show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
