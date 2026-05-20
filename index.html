@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ammar Ibrahim — Portfolio</title>
   <meta name="description" content="Personal portfolio of Ammar Ibrahim — Full-Stack Developer & UI/UX Enthusiast." />
+  <!-- Preconnect for faster CDN loads -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- Google Fonts (non-blocking) -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
 
   <!-- Tailwind CSS (Local) -->
   <link rel="stylesheet" href="css/tailwind.css" />
@@ -13,8 +21,12 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Icons (Heroicons via CDN snippet + Unicode fallback) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Font Awesome (async) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </noscript>
 </head>
 
 <body class="bg-gray-50 text-slate-800">
@@ -112,6 +124,7 @@
         <div class="relative">
           <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
             <img src="../assets/images/profile.webp" alt="Ammar Ibrahim" class="w-full h-full object-cover"
+              loading="lazy"
               onerror="this.outerHTML='<div class=\'w-full h-full bg-gradient-to-br from-cyan-400 to-sky-500 flex items-center justify-center text-white text-7xl font-bold\'>AI</div>'" />
           </div>
           <!-- Decoration blobs -->
@@ -287,43 +300,6 @@
     </div>
   </footer>
 
-  <!-- Animation styles (lightweight, no extra library) -->
-  <style>
-    .animate-on-scroll {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .animate-show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ── Colored category badges on cards ── */
-    .cat-badge {
-      display: inline-block;
-      padding: 0.2rem 0.7rem;
-      border-radius: 9999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-    }
-
-    .cat-web {
-      background: #eff6ff;
-      color: #2563eb;
-    }
-
-    .cat-app {
-      background: #fef2f2;
-      color: #dc2626;
-    }
-
-    .cat-ui {
-      background: #f0fdf4;
-      color: #16a34a;
-    }
-  </style>
 
   <script src="js/main.js"></script>
 </body>

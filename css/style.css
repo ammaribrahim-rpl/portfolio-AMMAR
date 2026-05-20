@@ -13,7 +13,7 @@
 ============================================= */
 
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Loaded via <link> in HTML <head> for non-blocking render */
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -294,3 +294,34 @@ body {
   body { background: #fff; color: #000; }
   .card { box-shadow: none; border: 1px solid #ddd; }
 }
+
+/* ---------- Scroll animations ---------- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Category badges (project cards) ---------- */
+.cat-badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.cat-web { background: #eff6ff; color: #2563eb; }
+.cat-app { background: #fef2f2; color: #dc2626; }
+.cat-ui  { background: #f0fdf4; color: #16a34a; }
+
+/* ---------- Colored filter buttons (Projects page) ---------- */
+.filter-all.active, .filter-all:hover { border-color: #06b6d4; color: #0891b2; background: #e0f7fa; }
+.filter-web.active, .filter-web:hover { border-color: #3b82f6; color: #2563eb; background: #eff6ff; }
+.filter-app.active, .filter-app:hover { border-color: #ef4444; color: #dc2626; background: #fef2f2; }
+.filter-ui.active,  .filter-ui:hover  { border-color: #22c55e; color: #16a34a; background: #f0fdf4; }
